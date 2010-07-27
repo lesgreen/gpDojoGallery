@@ -1,0 +1,82 @@
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+IMG {
+	border:none;
+}
+
+a.gpGalleryThumbs {
+	display:block;
+	float:left;
+	margin: 10px;
+	text-decoration:none;
+}
+a.gpGalleryThumbs:hover {
+	cursor:pointer;
+}
+div.gpGalleryThumbs {
+	margin:10px;
+}
+.gpGalleryAnimLoading {
+	background:url(../images/throbber.gif) no-repeat;
+	width:32px;
+	height:32px;
+	display:none;
+}
+
+/* Main Navigation */
+.gpGalleryPrevBtn, .gpGalleryNextBtn {
+	float:left;
+	width:32px;
+	height:32px;
+	background:url(../images/prev-rtl.png) no-repeat;
+	margin-right:10px;
+	display:none;
+}
+.gpGalleryNextBtn {
+	background:url(../images/next-rtl.png) no-repeat;
+	margin-left:10px;
+	margin-right:0px;
+}	
+
+/* used when thumb_position = top, bottom, left, or right */
+#gpGalleryControlCntnr {
+	float:left;
+}
+
+/* used when thumb_position = left or right */
+
+#gpGalleryCntnr {
+	width:100%;
+	height:100%;
+}
+
+.gpThumbVert {
+	float:left;
+	width:20%;
+	margin:0;
+	padding:0;
+	background-color:#000;
+}
+
+.gpVertThumbCntnr, .gpVertNavCntnr {
+	float:left;
+	width:150px;
+	background-color: #eeeeee; 
+} 
+
+.gpVertNavCntnr {
+	padding-left:30px;
+	width:120px;
+}
+
+.gpLargeVert {
+	float:left;
+	width:80%;
+	background-color:#000;
+	margin:0;
+	padding:0;
+	height:100%;
+}

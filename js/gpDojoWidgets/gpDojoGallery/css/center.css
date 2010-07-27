@@ -1,0 +1,68 @@
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+IMG {
+	border:none;
+}
+
+a.gpGalleryThumbs {
+	display:block;
+	float:left;
+	margin: 10px;
+	text-decoration:none;
+}
+a.gpGalleryThumbs:hover {
+	cursor:pointer;
+}
+div.gpGalleryThumbs {
+	margin:10px;
+}
+.gpGalleryAnimLoading {
+	background:url(../images/throbber.gif) no-repeat;
+	width:32px;
+	height:32px;
+	display:none;
+}
+
+/* used when thumb_position = center 
+ * Center has separate 'hover' navigation
+ * */
+
+#gpGalleryCntnr {
+	position: absolute;
+	width: 500px;
+	height:600px;
+	top:50px;
+	left:50%;
+	margin-left: -250px; 
+}
+.gpGalleryThumbWrapper {
+	float:left;
+	width:500px;
+	height:600px;
+	overflow:auto;
+	margin:0;
+	padding:0;
+}
+
+.gpGalleryHoverShowPrevBtn, .gpGalleryHoverShowNextBtn {
+	position:relative;
+	width:63px;
+	height:32px;
+	top:80px;
+	left:0px;
+	z-index:98;
+	background:url(../images/lightbox-btn-prev.gif) no-repeat;
+	display:none;
+}
+.gpGalleryHoverShowNextBtn {
+	background:url(../images/lightbox-btn-next.gif) no-repeat;
+	left:100%;
+	z-index:99;
+	top:50px;
+}
+.gpGalleryHoverShowPrevBtn:hover, .gpGalleryHoverShowNextBtn:hover {
+	cursor:pointer;
+}
