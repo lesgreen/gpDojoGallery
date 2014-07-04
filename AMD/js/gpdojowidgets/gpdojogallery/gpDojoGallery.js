@@ -1,21 +1,6 @@
 /**
- * @author lesgreen
+ * @author Les Green -http://grasshopperpebbles.com
  */
-
-define(['dojo/_base/kernel', 'dojo/io/script', 'dojo/_base/loader', 'dojo/_base/declare'], function(dojo, ioScript){
-  dojo.provide("gp.gpDojoGallery");
-
-  // dojo.provide made sure that my.module was created as a JavaScript object,
-  // so properties can be assigned to it:
-  gp.gpDojoGallery.name = "gpDojoGallery";
-});
-//dojo.provide("gp.gpDojoGallery");
-
-//dojo.require("dijit._Widget");
-//dojo.require("dijit._Templated");
-//dojo.require("dojo.data.ItemFileReadStore");
-//dojo.require("dojox.image.Lightbox");
-
 
 require([
         	'dojo/_base/declare',

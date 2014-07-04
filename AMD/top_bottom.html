@@ -11,25 +11,13 @@
     <h1>gpDojoGallery - Thumb Position Bottom</h1>
     <!-- load Dojo -->
     <script>
-        // Instead of using data-dojo-config, we're creating a dojoConfig
-        // object *before* we load dojo.js; they're functionally identical,
-        // it's just easier to read this approach with a larger configuration.
         var dojoConfig = {
             async: true,
             baseUrl: "/js",
-            // This code registers the correct location of the "demo"
-            // package so we can load Dojo from the CDN whilst still
-            // being able to load local modules
             parseOnLoad: true,
 		    packages: [
 		        { name: "gp", location: "/js/gpdojowidgets/gpdojogallery" }
-		    ],
-		   /* map: {
-            // Instead of having to type "dojo/domReady!", we just want "ready!" instead
-	            "*": {
-	                ready: "dojo/domReady"
-	            }
-	        }*/
+		    ]
 		};
   
     </script>
@@ -38,18 +26,13 @@
         require([
         	'dojo/_base/declare',
             'gp/gpDojoGallery',
-            "dojo/ready",
-    		//"ready!",
-    		'dojo/parser'
-        ], function (declare, gpDojoGallery, ready, parse) {
+            "dojo/ready"
+        ], function (declare, gpDojoGallery, ready) {
         	
             ready(function(){
                   new gp.gpDojoGallery({gallery_url: "/js/gpdojowidgets/gpdojogallery/test_data/gallery.js", base_path: "/images/", picsPerPage: 6, thumb_position: 'bottom', large_max_height: 500}, 'gpGalleryCntnr');
             });
-           
-        	
-		    //var greeting = dom.byId('greeting');
-		    //greeting.innerHTML += ' from Dojo!';
+          
 		});
     </script>
     <div id="gpGalleryCntnr">
